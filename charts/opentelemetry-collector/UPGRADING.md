@@ -1,5 +1,10 @@
 # Upgrade guidelines
 
+## 0.55.1 to 0.56.0
+[Add support for VPA autoscaling](https://github.com/open-telemetry/opentelemetry-helm-charts/issues/756)
+
+The ability to use a _HorizontalPodAutoscaler_ for the collector when running in the "deployment" mode has been moved from `.Values.autoscaling.enabled` to `.Values.autoscaling.hpa.enabled` as now more autoscaling options are supported.
+
 ## 0.53.1 to 0.54.0
 
 As of v0.54.0 Collector chart, the default resource limits are removed. If you want to keep old values you can use the following configuration:

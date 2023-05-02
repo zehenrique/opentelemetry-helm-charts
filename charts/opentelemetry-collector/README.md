@@ -40,7 +40,7 @@ Some care must be taken when using `hostNetwork: true`, as then OpenTelemetry Co
 ### Default configuration
 
 By default this chart will deploy an OpenTelemetry Collector as daemonset with three pipelines (logs, metrics and traces)
-and logging exporter enabled by default. Besides daemonset (agent), it can be also installed as deployment.
+and logging exporter enabled by default. Besides daemonset (agent), it can be also installed as deployment or statefulset.
 
 *Example*: Install collector as a deployment, and do not run it as an agent.
 
